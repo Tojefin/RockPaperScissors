@@ -1,0 +1,160 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  overflow: overlay;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  position: relative;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #ff8d07 #ffffff;
+}
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #252525;
+  border-radius: 5px;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  scroll-behavior: smooth;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, input {
+  appearance: none;
+  border: none;
+}
+
+select {
+  -webkit-appearance: none;
+  padding: 4px 0 4px 12px;
+  width: 100%;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+select:focus {
+  outline: none;
+  border-color: #444444;
+}
+
+iframe {
+  border: none;
+}
+
+body {
+  margin-left: 50%;
+  margin-top: 25%;
+  transform: translate(-50%, -75%);
+}
+
+.block {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: #777 1px solid;
+  display: flex;
+  gap: 15px;
+}
+.block--column {
+  flex-direction: column;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.list--row {
+  flex-direction: row;
+}
+.list-title {
+  font-size: 1vw;
+  font-weight: 600;
+  border-bottom: 0.5px #333 solid;
+  padding-bottom: 2px;
+}
+
+.button {
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #eee;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: #222;
+  transition: all ease 0.2s;
+}
+.button:hover {
+  opacity: 0.9;
+}
+.button:active {
+  opacity: 0.7;
+}
+.button--gray {
+  background: gray;
+}
+.button--yellow {
+  background: #cbd900;
+	color: #333;
+}
+.button--lime {
+  background: #00e326;
+	color: #333;
+}
+.button--red {
+  background: #ff4a4a;
+}
+
+.field {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu > h1 {
+  font-size: 6vw;
+  font-weight: 600;
+  padding-bottom: 3rem;
+}
+
+.lobby, .game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
